@@ -1,0 +1,26 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+option java_multiple_files = true;
+option java_package = "events";
+
+package forum;
+
+// The Front-End definition to the users.
+service Events {
+  rpc getConsumersNumber(google.protobuf.Empty) returns (ConsumersInfo);
+  rpc getEventAverageBetweenDates(EventDateInfo) returns (EventInfo);
+  rpc getHighestSpeedEvent(google.protobuf.Empty) returns (EventInfo);
+}
+
+message EventInfo{
+  float speed = 1;
+}
+
+message EventDateInfo{
+  string beginDate = 1;
+  string endDate = 2;
+}
+
+message ConsumersInfo {
+  int32 consumersNumber = 1;
+}
