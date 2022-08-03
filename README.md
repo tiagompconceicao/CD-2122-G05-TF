@@ -41,10 +41,10 @@ na respetiva diretoria "target" gerada pela compilação dos artefactos:
   Aplicação cliente:	
 	java -cp EventsUser-1.0-jar-with-dependencies.jar EventsUser <serverIP> <serverPort>
 
-<mode> representa o modo de operação do simulator, valor 1 para executar modo automático, qualquer outro valor não nulo para executar em modo manual.
-<eventsNumber> representa o número de eventos a gerar pelo simulador, este argumento é opcional.
-<id> representa o identificador numérico único do processo.
-<brokerIP> representa o IP do servidor RabbitMQ.
-<daemonIP> representa o IP do servidor Daemon do Spread.
-<serverPort> representa o porto do servidor gRPC no qual ficará à escuta.
-<serverIP> representa o IP do servidor gRPC.
+- <mode> representa o modo de operação do simulator, valor 1 para executar modo automático, qualquer outro valor não nulo para executar em modo manual.
+- <eventsNumber> representa o número de eventos a gerar pelo simulador, este argumento é opcional.
+- <id> representa o identificador numérico único do processo.
+- <brokerIP> representa o IP do servidor RabbitMQ.
+- <daemonIP> representa o IP do servidor Daemon do Spread.
+- <serverPort> representa o porto do servidor gRPC no qual ficará à escuta.
+- <serverIP> representa o IP do servidor gRPC.
